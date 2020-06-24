@@ -22,6 +22,10 @@ public class SimpleCalculatorImpl implements Calculator {
 
     @Override
     public int divide(int argA, int argB) {
-        return argA/argB;
+        if(argB == 0){
+            throw new IllegalArgumentException("Divisor (argB) cannot be 0");
+        }else {
+            return argA / argB;
+        }
     }
 }
