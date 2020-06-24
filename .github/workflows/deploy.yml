@@ -21,4 +21,4 @@ jobs:
     - name: Build with Maven
       run: mvn clean package
     - name: Deploy the application
-      run: java -cp com.zemosolabs.training.githubactions.Main
+      run: java -cp target/github-action-basics-1.0-SNAPSHOT.jar com.zemosolabs.training.githubactions.Main
